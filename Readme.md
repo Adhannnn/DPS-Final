@@ -3,5 +3,5 @@
   <h1><i>Final Exam</i></h1>
 </div>
 <div align="center">
-  <img src="https://kompaspedia.kompas.id/wp-content/uploads/2021/07/logo_universitas-presiden.png" width="150px" height="150px"/>
+  <img src="https://kompaspedia.kompas.id/wp-content/uploads/2021/07/logo_universitas-presiden.png" width="200px" height="200px"/>
 </div>
