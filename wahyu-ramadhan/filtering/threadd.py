@@ -21,14 +21,14 @@ def time_func(func, data):
     return end - start
 
 if __name__ == "__main__":
-    df = pd.read_csv(csv_file)
+    df = pd.read_csv(csv_file)[["trip_duration"]]
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
 
     splits = {
-        "25%" : df.iloc[:int(0.25 * len(df))],
-        "50%" : df.iloc[:int(0.5 * len(df))],
-        "75%" : df.iloc[:int(0.75 * len(df))],
-        "100%" : df
+        "25%": df.iloc[:int(0.25 * len(df))].copy(),
+        "50%": df.iloc[:int(0.5 * len(df))].copy(),
+        "75%": df.iloc[:int(0.75 * len(df))].copy(),
+        "100%": df.copy()
     }
 
     print("[Threading Filtering]")
