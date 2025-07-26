@@ -27,7 +27,7 @@ def time_func(func, data):
 if __name__ == "__main__":
     multiprocessing.set_start_method("fork", force=True)  # Tambahkan ini di macOS!
 
-    df = pd.read_csv(csv_file)
+    df = pd.read_csv(csv_file)[["trip_duration"]]
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
 
     splits = {
